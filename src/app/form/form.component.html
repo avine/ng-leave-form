@@ -1,0 +1,12 @@
+<p>form works!</p>
+
+<form [formGroup]="form">
+  <input [formControl]="form.controls.name" />
+
+  <button type="submit">Submit</button>
+</form>
+
+<br />
+<button (click)="snapshot()">Snapshot</button>
+
+<pre>{{ form.value | json }}</pre>
